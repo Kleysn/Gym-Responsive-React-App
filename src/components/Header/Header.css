@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+    width: 10rem;
+    height: 3rem;
+}
+
+.header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    /* font-weight: 100; */
+}
+
+.header-menu li {
+    cursor: pointer;
+}
+
+.header-menu li:hover {
+    color: var(--orange);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header>:nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+        gap: 0.5rem;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 1rem;
+        border-radius: 7px;
+    }
+
+    .img-bar {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .header>:nth-child(2) {
+        background-color: var(--appColor);
+        padding: 0.5rem;
+        border-radius: 7px;
+    }
+}
